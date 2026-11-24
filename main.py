@@ -1,22 +1,28 @@
 #!/usr/bin/env python3
 """Everyday Things, Two Lines, Longer Run.
 
-A two-line entry about an everyday thing: the smoke detector whose
-battery only ever dies in the middle of the night.
+A two-line explanation of one everyday thing for a 10-year-old.
 
-The program writes exactly two lines of original text to
-/output/entry.txt, the artifact the sealed scorer gates and the
-house judge compares. Standard library only; no network, no file
-reads outside this program, no working-directory assumptions.
+Line 1 explains a traffic jam in a single vivid sentence built on
+one analogy: a zipper stuck halfway. Line 2 says in one sentence
+why that analogy works: what it maps (cars merging one by one,
+like zipper teeth) and what it leaves out (the drivers, the red
+lights, and why the road jammed at all).
+
+The program writes exactly those two lines to /output/entry.txt,
+the artifact the sealed scorer gates and the house judge compares.
+Standard library only; no network, no file reads outside this
+program, no working-directory assumptions.
 """
 
 import os
 
 # The entry: two lines, written here as the program's own data.
-# Line one sets up the everyday thing with a specific, odd detail;
-# line two lands the twist with a fresh comparison.
-LINE_ONE = "The smoke detector's battery only dies at 3 a.m. — never at 3 p.m."
-LINE_TWO = "It waits until I am sound asleep, then chirps once, like a tiny landlord demanding rent."
+# Line one is a single vivid sentence with one concrete analogy;
+# line two is one honest sentence about what the analogy maps
+# and what it leaves out.
+LINE_ONE = "A traffic jam is a zipper stuck halfway, its teeth cars jammed bumper to bumper with nowhere to slide."
+LINE_TWO = "It maps how cars must merge one by one like teeth, but it leaves out the drivers, the red lights, and why the road jammed at all."
 
 OUTPUT_DIR = "/output"
 OUTPUT_NAME = "entry.txt"
